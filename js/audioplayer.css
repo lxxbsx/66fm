@@ -1,0 +1,102 @@
+.audioplayer{
+    color:#000000;
+    background-color:#52bfaa;
+    padding:18px 30px 6px;
+    height:33px;
+    border-radius:25px;
+    font-size:14px;
+    max-width:390px;
+	margin:0 auto;
+	box-shadow: 3px 3px 6px #205c50;
+}
+.audioplayer-play-paused{
+    width:39px;
+    height:39px;
+    margin-right:10px;
+	margin-top:-20px;
+    float:left;
+    cursor:pointer;
+    display:inline-block;
+    background-size:contain;
+	background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKpJREFUSEvt1DEKwjAYhuGnh9VBRLyBN3DxCm6Ciwdw8whOboI4CY4iqBSsgxSTtvzg0MzJ+5Lvz5dC8CqC+XpBMuGciDYY4Zik1WzIETxxxQwLPJqIcgUVc4cB9rmSpoKSe8f8faNbStRGUDEPGGL7S9JFUHLL+SwxxaVO1FVQMc+YYPUt+XtBaERhQw59pmFFC/0q1hjjlGpt2x604X7O5PSgF3RKIHn4BQKLLhka1QenAAAAAElFTkSuQmCC");
+}
+.audioplayer-play-playing{
+    width:39px;
+    height:39px;
+    margin-right:10px;
+	margin-top:-20px;
+    float:left;
+    cursor:pointer;
+    display:inline-block;
+    background-size:contain;
+    background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAEtJREFUSEtjZKAxYKSx+QyjFhAMYXxB9B9NN7paQvJg7aMWIIci1tAYDaLRIELJaqMZDaPcIlTWEJIf+LKIYFFMjILRGo1gKNE8iABOhBwZP060fQAAAABJRU5ErkJggg==");
+}
+.audioplayer-tip{
+    display:inline-block;
+    float:left;
+	margin-top:-13px;
+}
+.audioplayer-wrong-tip{
+    display:inline-block;
+    color:#e74c3c;
+    float:left;
+}
+.audioplayer-volume{
+    width:100px;
+    height:19px;
+    float:right;
+	margin-top:-11px;
+    cursor:pointer;
+    display:inline-block;
+    background-size:22px 21px;
+    background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVhJREFUSEvN1LtKHVEYhuFnW3ru9ApMK6ilNlppIxKTSvDQijegIaKXYGdCSrURY6+GELFTS0MU78FjG1mwRmYPe29n9gFcMAzD/Ot7+U9fSYtPqcX63jXgO/ZwVKsKRTNYR3jC+R/fp1jATSVQEUAQ/sprWVexjH7cYwoBVnbyAhLxcDl9pxvb+Iw7jOA6TcgDSItnAeG7Dbv4FDMYLQLIiqcBPzGHB/TgbyzXBI4TSDaDpHF5BiPEHmI6Bq9hEz+w1CxA0BnGOQZxGXsw0EzACrbQjic8o6MVgM7Yj0d0NRMwhItUif7hQ7MAB5iJYl+w8VaTs9NTa0z3MR/L0ourOKbjOKmWQaXxzLNowfRm8QdjRRYtia1mFWHBgqt+jFYRRrbM9PJYRRaS3AmLFcyuL4pP4qxes0tDsnb9G4u4bdSus/e/YQe/8vhKrZiG/hXpQV2glgNeAJ0kShk6JT4cAAAAAElFTkSuQmCC");
+    background-repeat:no-repeat;
+    background-position:right;
+}
+.audioplayer-volume-muted{
+    width:200px;
+    height:19px;
+    margin-right:10px;
+    float:right;
+    cursor:pointer;
+    display:inline-block;
+    background-size:22px 21px;
+    background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAaZJREFUSEvV1b1rVUEQxuEndioqgoWNrWUImJR22iiKVawsgoUIErBKEUHRxj4hhYhgIWpntLDRRgQRoiFFQEj+CD/wCwVlwtywLnu9OQkRXDgcuHd2fmfed2d2yDavoW3O758DjmESZ/F1QHW38QDP/hZXV/AYp3LT6QbkGuKJ9SvfLzGB1RaoBuxEQKKS+LISEomvsi7rNC7hID7iJAL2x2p50IJ8x32MF4BItBe3UtIPGMNKSehncgvyA/cyWZljRwGPCo5uBBAx/SA/M8EjnMMn7MO7lCvkfd6D1BX0jGv5VXsSsfM4k8FXcAN3cH4zgNhTQh6mJ6N4gxEspgeHNwuIfS9wAt9wF68xg134jC/YvRVAWUkYP4y3eaLiJL3H/q0AQqZWnxzBApZSrjVGF5N7HxVStJrxIuayLy70q6A+PVO42WjO8gjXnoQf4Uuzgtbx7I2Ies+gPtkwIAJLSCnrISxjT78B2eU+qIfddYTuB3KyRq66GTtfOK1x/RSXsxeO40lO4U4StbyZzeH3Kv8MT+ICCpPXL6EuErUgA3/7/wG/AXE/axl22gAbAAAAAElFTkSuQmCC");
+    background-repeat:no-repeat;
+    background-position:right;
+}
+.audioplayer-volume-seeker{
+    display:inline-block;
+    appearance:none;
+    margin-right:30px;
+    background-color:#52bfaa;
+    float:right;
+}
+/* Seeker of Webkit */
+.audioplayer-volume-seeker::-webkit-slider-thumb{
+    appearance:none;
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    background-color:#000000;
+    margin-top:-4px;
+}
+.audioplayer-volume-seeker::-webkit-slider-runnable-track{
+    background-color:#000000;
+    margin-top:7px;
+    height:3px;
+}
+/* Seeker of Gecko */
+.audioplayer-volume-seeker::-moz-range-thumb{
+    appearance:none;
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    background-color:#000000;
+    margin-top:-4px;
+}
+.audioplayer-volume-seeker::-moz-range-track{
+    background-color:#000000;
+    margin-top:7px;
+    height:3px;
+}
